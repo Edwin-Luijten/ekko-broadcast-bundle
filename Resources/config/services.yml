@@ -1,0 +1,3 @@
+services:
+    broadcast.manager:
+      class: EdwinLuijten\Ekko\BroadcastManager
