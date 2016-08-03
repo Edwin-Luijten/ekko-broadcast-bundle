@@ -1,0 +1,40 @@
+{
+    "name": "edwin-luijten/ekko-bundle",
+    "type": "symfony-bundle",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Edwin Luijten",
+            "email": "edwin.luijten@live.nl"
+        }
+    ],
+    "keywords": [
+    ],
+    "require": {
+        "php": ">=5.5.0|~7.0",
+        "symfony/framework-bundle": "^2.7|^3.0",
+        "edwin-luijten/ekko": "dev-master"
+    },
+    "require-dev": {
+        "symfony/symfony": "^2.7|^3.0",
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "~0.9",
+        "squizlabs/php_codesniffer": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EdwinLuijten\\EkkoBundle\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EdwinLuijten\\EkkoBundle\\Tests\\": "Tests"
+        }
+    },
+	"suggest": {
+        "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~2.0).",
+        "predis/predis": "Required to use the Redis broadcast driver (~1.0).",
+        "monolog/monolog":  "Required to use the Log broadcast driver (~1.18)."
+    }
+}
