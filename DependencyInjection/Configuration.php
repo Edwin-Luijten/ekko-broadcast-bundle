@@ -16,8 +16,9 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
 					->scalarNode('default')
-					->end()
-					->variableNode('broadcasters')
+                        ->info('This sets the default broadcaster.')
+                        ->isRequired()
+                        ->cannotBeEmpty()
 					->end()
                 ->end()
             ->end()
