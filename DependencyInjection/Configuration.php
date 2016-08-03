@@ -15,13 +15,10 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->arrayNode('broadcaster')
-                    ->children()
-                        ->scalarNode('default')
-                        ->end()
-                        ->variableNode('connections')
-                        ->end()
-                    ->end()
+					->scalarNode('default')
+					->end()
+					->variableNode('broadcasters')
+					->end()
                 ->end()
             ->end()
         ;
