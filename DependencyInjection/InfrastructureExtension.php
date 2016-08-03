@@ -28,7 +28,6 @@ class EkkoExtension extends Extension
         $config = $this->processConfiguration(new Configuration(), $configs);
 
         $this->configureBroadcastManager($config['broadcaster'], $container);
-        $this->configureBroadcastManager($config['broadcaster'], $container);
     }
 
     /**
