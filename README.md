@@ -5,7 +5,7 @@
 [![Build Status](https://img.shields.io/travis/Edwin-Luijten/ekko-bundle/master.svg?style=flat-square)](https://travis-ci.org/Edwin-Luijten/ekko-bundle)
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/Edwin-Luijten/ekko-bundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/Edwin-Luijten/ekko-bundle/?branch=master)
 [![Quality Score](https://img.shields.io/scrutinizer/g/Edwin-Luijten/ekko-bundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/Edwin-Luijten/ekko-bundle/?branch=master)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/c2f65cee-102d-4066-ba1f-311e01d9f03f/mini.png)](https://insight.sensiolabs.com/projects/c2f65cee-102d-4066-ba1f-311e01d9f03f)
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/c2f65cee-102d-4066-ba1f-311e01d9f03f.svg?maxAge=2592000)](https://insight.sensiolabs.com/projects/c2f65cee-102d-4066-ba1f-311e01d9f03f)
 [![Total Downloads](https://img.shields.io/packagist/dt/edwin-luijten/ekko-bundle.svg?style=flat-square)](https://packagist.org/packages/edwin-luijten/ekko-bundle)
 
 ⋅⋅⋅In many modern web applications, web sockets are used to implement real-time, live-updating user interfaces.⋅⋅
