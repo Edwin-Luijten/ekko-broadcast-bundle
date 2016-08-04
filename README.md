@@ -63,9 +63,9 @@ Using the Pusher broadcaster:
 pusher:
     class: Pusher
     arguments:
-      - '15179eb01a2db086889f'
-      - 'd49a70c873ab4acabff5'
-      - '118258'
+      - 'app_key'
+      - 'app_secret'
+      - 'app_id'
 
   pusher.broadcaster:
     class: EdwinLuijten\Ekko\Broadcasters\PusherBroadcaster
