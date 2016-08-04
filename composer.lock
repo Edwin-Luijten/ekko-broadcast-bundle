@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3488a068905f3f93b215601d3ecb3f1f",
-    "content-hash": "672c0db36b9b0751e14eedb0b81a07f7",
+    "hash": "004835824054602756e158c5f8e3d1b9",
+    "content-hash": "5096f51e4b9e517f7b1b3adf3fd72736",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -411,12 +411,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Edwin-Luijten/ekko.git",
-                "reference": "6729f3b6d243f6797f88ecacd0969f10dc222016"
+                "reference": "2e910b98b8879f8c2f941601aa30fa7e418045ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Edwin-Luijten/ekko/zipball/6729f3b6d243f6797f88ecacd0969f10dc222016",
-                "reference": "6729f3b6d243f6797f88ecacd0969f10dc222016",
+                "url": "https://api.github.com/repos/Edwin-Luijten/ekko/zipball/2e910b98b8879f8c2f941601aa30fa7e418045ca",
+                "reference": "2e910b98b8879f8c2f941601aa30fa7e418045ca",
                 "shasum": ""
             },
             "require": {
@@ -451,7 +451,7 @@
                     "email": "edwin.luijten@live.nl"
                 }
             ],
-            "time": "2016-08-03 14:33:34"
+            "time": "2016-08-03 15:00:22"
         },
         {
             "name": "monolog/monolog",
@@ -581,16 +581,16 @@
         },
         {
             "name": "predis/predis",
-            "version": "v1.1.1",
+            "version": "v1.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+                "reference": "6ab10b2b705ea5121f2c1ea87a290f6871c32ebd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
-                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/6ab10b2b705ea5121f2c1ea87a290f6871c32ebd",
+                "reference": "6ab10b2b705ea5121f2c1ea87a290f6871c32ebd",
                 "shasum": ""
             },
             "require": {
@@ -627,7 +627,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2016-06-16 16:22:20"
+            "time": "2016-06-18 19:51:10"
         },
         {
             "name": "psr/cache",
@@ -715,16 +715,16 @@
         },
         {
             "name": "pusher/pusher-php-server",
-            "version": "v2.4.2",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pusher/pusher-http-php.git",
-                "reference": "1120029fa16bfc92da06971df4a370a1b69c74c1"
+                "reference": "9f721dd7b0ab88aa24197f43d34a83c8d2c5d13d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/1120029fa16bfc92da06971df4a370a1b69c74c1",
-                "reference": "1120029fa16bfc92da06971df4a370a1b69c74c1",
+                "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/9f721dd7b0ab88aa24197f43d34a83c8d2c5d13d",
+                "reference": "9f721dd7b0ab88aa24197f43d34a83c8d2c5d13d",
                 "shasum": ""
             },
             "require": {
@@ -755,7 +755,7 @@
                 "rest",
                 "trigger"
             ],
-            "time": "2016-07-04 13:08:05"
+            "time": "2016-03-16 19:51:22"
         },
         {
             "name": "symfony/polyfill-intl-icu",
@@ -2484,14 +2484,14 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "edwin-luijten/ekko": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.5.0|~7.0"
+        "php": ">=5.5.0"
     },
     "platform-dev": []
 }

@@ -12,7 +12,7 @@
     "keywords": [
     ],
     "require": {
-        "php": ">=5.5.0|~7.0",
+        "php": ">=5.5.0",
         "symfony/framework-bundle": "^2.7|^3.0",
         "edwin-luijten/ekko": "dev-master"
     },
@@ -36,5 +36,6 @@
         "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~2.0).",
         "predis/predis": "Required to use the Redis broadcast driver (~1.0).",
         "monolog/monolog":  "Required to use the Log broadcast driver (~1.18)."
-    }
+    },
+    "minimum-stability": "dev"
 }
