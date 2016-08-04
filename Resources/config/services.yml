@@ -1,13 +1,3 @@
 services:
-    ekko.broadcaster.redis:
-      class: Predis\Client
-      arguments: ~
-
     ekko.broadcast.manager:
       class: EdwinLuijten\Ekko\BroadcastManager
-
-    ekko.broadcast.redis:
-      class: EdwinLuijten\Ekko\Broadcasters\RedisBroadcaster
-      arguments: "@ekko.broadcaster.redis"
-      tags:
-        - { name: ekko.broadcaster, alias: redis, default: true }
