@@ -32,10 +32,5 @@
             "EdwinLuijten\\EkkoBundle\\Tests\\": "Tests"
         }
     },
-	"suggest": {
-        "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~2.0).",
-        "predis/predis": "Required to use the Redis broadcast driver (~1.0).",
-        "monolog/monolog":  "Required to use the Log broadcast driver (~1.18)."
-    },
     "minimum-stability": "dev"
 }
