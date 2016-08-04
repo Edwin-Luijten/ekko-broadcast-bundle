@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "004835824054602756e158c5f8e3d1b9",
+    "hash": "0420676adf5a66ed8187f50c3de9c7f3",
     "content-hash": "5096f51e4b9e517f7b1b3adf3fd72736",
     "packages": [
         {
@@ -411,16 +411,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Edwin-Luijten/ekko.git",
-                "reference": "2e910b98b8879f8c2f941601aa30fa7e418045ca"
+                "reference": "cc4042f7c3d54e224ba18748332135d33806e82e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Edwin-Luijten/ekko/zipball/2e910b98b8879f8c2f941601aa30fa7e418045ca",
-                "reference": "2e910b98b8879f8c2f941601aa30fa7e418045ca",
+                "url": "https://api.github.com/repos/Edwin-Luijten/ekko/zipball/cc4042f7c3d54e224ba18748332135d33806e82e",
+                "reference": "cc4042f7c3d54e224ba18748332135d33806e82e",
                 "shasum": ""
             },
             "require": {
-                "monolog/monolog": "1.18",
+                "monolog/monolog": "^1.20",
                 "php": ">=5.5.0",
                 "predis/predis": "^1.1",
                 "pusher/pusher-php-server": "^2.4"
