@@ -5,6 +5,7 @@
 [![Build Status](https://img.shields.io/travis/Edwin-Luijten/ekko-bundle/master.svg?style=flat-square)](https://travis-ci.org/Edwin-Luijten/ekko-bundle)
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/Edwin-Luijten/ekko-bundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/Edwin-Luijten/ekko-bundle/?branch=master)
 [![Quality Score](https://img.shields.io/scrutinizer/g/Edwin-Luijten/ekko-bundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/Edwin-Luijten/ekko-bundle/?branch=master)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/c2f65cee-102d-4066-ba1f-311e01d9f03f/mini.png)](https://insight.sensiolabs.com/projects/c2f65cee-102d-4066-ba1f-311e01d9f03f)
 [![Total Downloads](https://img.shields.io/packagist/dt/edwin-luijten/ekko-bundle.svg?style=flat-square)](https://packagist.org/packages/edwin-luijten/ekko-bundle)
 
 ⋅⋅⋅In many modern web applications, web sockets are used to implement real-time, live-updating user interfaces.⋅⋅
@@ -22,6 +23,7 @@ $ composer require edwin-luijten/ekko-bundle
 
 ## Usage
 
+### Enable ###
 Enable the bundle by adding it to the list of registered bundles
 in the `app/AppKernel.php` file of your project:
 
@@ -45,6 +47,32 @@ class AppKernel extends Kernel
 
     // ...
 }
+```
+
+### Configuration ###
+
+Ekko comes with 3 broadcasters:
+
+- Pusher
+- Redis
+- Logger
+
+Using the Pusher broadcaster:
+```yaml 
+#services.yml
+pusher:
+    class: Pusher
+    arguments:
+      - '15179eb01a2db086889f'
+      - 'd49a70c873ab4acabff5'
+      - '118258'
+
+  pusher.broadcaster:
+    class: EdwinLuijten\Ekko\Broadcasters\PusherBroadcaster
+    arguments:
+      - "@pusher"
+    tags:
+      - { name: "ekko.broadcaster", alias: "pusher", default: true }
 ```
 
 ## Change log
