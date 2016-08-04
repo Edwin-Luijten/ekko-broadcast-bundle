@@ -75,6 +75,30 @@ pusher:
       - { name: "ekko.broadcaster", alias: "pusher", default: true }
 ```
 
+The key for adding broadcasters is tagging. A broadcaster must have a tag with name `ekko.broadcaster` and an alias.
+The alias is used to create a named connection so you can access it for example as: `ekko.broadcaster.pusher`.
+
+### Creating your own broadcaster is really easy
+Start by creating your broadcaster class:
+```php
+<?php
+
+namespace Achme/Namespace
+
+class MyBroadcaster implements EdwinLuijten\Broadcasters\BroadcasterInterface 
+{
+    /**
+     * @var InstanceOfMyCLient
+     */
+    private $myBroadcastClient;
+    
+    public function __construct(InstanceOfMyCLient $myBroadcastClient) {
+        $this->myBroadcastClient = $myBroadcastClient);
+    }
+}
+
+```
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
