@@ -4,8 +4,7 @@ namespace EdwinLuijten\EkkoBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Definition;
-use Symfony\Component\Validator\Tests\Fixtures\Reference;
+use Symfony\Component\DependencyInjection\Reference;
 
 class BroadcasterPass implements CompilerPassInterface
 {
@@ -25,21 +24,25 @@ class BroadcasterPass implements CompilerPassInterface
         foreach ($taggedServices as $id => $tags) {
             foreach ($tags as $attributes) {
                 $reference = new Reference($id);
-                $broadcaster = new Definition($reference);
+                $broadcaster = $container->getDefinition($reference->__toString());
 
                 // Set default broadcaster if defined
-                if (isset($attributes['default']) && $attributes['default'] === true) {
-                    $definition->addMethodCall('setDefaultBroadcaster', $reference);
-                    $container->setDefinition('broadcaster.default', $broadcaster);
+                if (isset($attributes['default'])) {
+                    if(!$container->hasDefinition('ekko.broadcaster.default')) {
+                        $definition->addMethodCall('setDefaultBroadcaster', [$broadcaster]);
+                        $container->setAlias('ekko.broadcaster.default', $reference->__toString());
+                    }
                 }
 
                 $definition->addMethodCall('add', [
                     $attributes['alias'],
-                    $reference
+                    $broadcaster
                 ]);
 
-                // Register a new definition for each broadcaster
-                $container->setDefinition('broadcaster.' . $attributes['alias'], $broadcaster);
+                // Register an alias for each broadcaster
+                if(!$container->hasDefinition('ekko.broadcaster.' . $attributes['alias'])) {
+                    $container->setAlias('ekko.broadcaster.' . $attributes['alias'], $reference->__toString());
+                }
             }
         }
     }
