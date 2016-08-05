@@ -43,16 +43,25 @@ class BroadcasterPass implements CompilerPassInterface
         }
     }
 
-    private function createDefault($broadcaster, Reference $reference, Definition $definition, ContainerBuilder $container)
-    {
+    private function createDefault(
+        $broadcaster,
+        Reference $reference,
+        Definition $definition,
+        ContainerBuilder $container
+    ) {
         if (!$container->hasDefinition('ekko.broadcaster.default')) {
             $definition->addMethodCall('setDefaultBroadcaster', [$broadcaster]);
             $container->setAlias('ekko.broadcaster.default', $reference->__toString());
         }
     }
 
-    private function addBroadcaster($broadcaster, array $attributes, Reference $reference, Definition $definition, ContainerBuilder $container)
-    {
+    private function addBroadcaster(
+        $broadcaster,
+        array $attributes,
+        Reference $reference,
+        Definition $definition,
+        ContainerBuilder $container
+    ) {
         $definition->addMethodCall(
             'add',
             [
