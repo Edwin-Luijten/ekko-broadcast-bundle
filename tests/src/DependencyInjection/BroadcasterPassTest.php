@@ -11,12 +11,21 @@ class BroadcasterPassTest extends AbstractCompilerPassTestCase
 {
     protected function registerCompilerPass(ContainerBuilder $container)
     {
-        $container->setDefinition('ekko.broadcast.manager', new Definition());
+
         $container->addCompilerPass(new BroadcasterPass());
+    }
+
+    public function testThatCompilerPassReturns()
+    {
+        $this->compile();
+
+        $this->assertContainerBuilderNotHasService('ekko.broadcast.manager');
     }
 
     public function testThatCompilerPassSetsDefaultAlias()
     {
+        $this->container->setDefinition('ekko.broadcast.manager', new Definition());
+
         $collectingService = new Definition();
         $collectingService->addTag('ekko.broadcaster', [
             'alias' => 'test',
@@ -33,6 +42,8 @@ class BroadcasterPassTest extends AbstractCompilerPassTestCase
 
     public function testThatCompilerPassCollectsTags()
     {
+        $this->container->setDefinition('ekko.broadcast.manager', new Definition());
+
         $collectingService = new Definition();
         $collectingService->addTag('ekko.broadcaster', [
             'alias' => 'test',
