@@ -14,11 +14,12 @@ class BroadcasterPass implements CompilerPassInterface
      */
     public function process(ContainerBuilder $container)
     {
-        if (!$container->has('ekko.broadcast.manager')) {
+
+        if (!$container->hasDefinition('ekko.broadcast.manager')) {
             return;
         }
 
-        $definition     = $container->findDefinition('ekko.broadcast.manager');
+        $definition     = $container->getDefinition('ekko.broadcast.manager');
         $taggedServices = $container->findTaggedServiceIds('ekko.broadcaster');
 
         foreach ($taggedServices as $id => $tags) {

@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "EdwinLuijten\\EkkoBundle\\": "src"
+            "EdwinLuijten\\EkkoBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "EdwinLuijten\\EkkoBundle\\Tests\\": "tests"
+            "EdwinLuijten\\EkkoBundle\\Tests\\": "tests/src/"
         }
     }
 }
