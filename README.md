@@ -1,12 +1,12 @@
-# Ekko Bundle
+# Ekko Broadcast Bundle
 
-[![Latest Version](https://img.shields.io/github/release/edwin-luijten/ekko-bundle.svg?style=flat)](https://github.com/Edwin-Luijten/ekko-bundle/releases)
+[![Latest Version](https://img.shields.io/github/release/edwin-luijten/ekko-broadcast-bundle.svg?style=flat)](https://github.com/Edwin-Luijten/ekko-broadcast-bundle/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/Edwin-Luijten/ekko-bundle/master.svg?style=flat-square)](https://travis-ci.org/Edwin-Luijten/ekko-bundle)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/Edwin-Luijten/ekko-bundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/Edwin-Luijten/ekko-bundle/?branch=master)
-[![Quality Score](https://img.shields.io/scrutinizer/g/Edwin-Luijten/ekko-bundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/Edwin-Luijten/ekko-bundle/?branch=master)
+[![Build Status](https://img.shields.io/travis/Edwin-Luijten/ekko-broadcast-bundle/master.svg?style=flat-square)](https://travis-ci.org/Edwin-Luijten/ekko-broadcast-bundle)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/Edwin-Luijten/ekko-broadcast-bundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/Edwin-Luijten/ekko-broadcast-bundle/?branch=master)
+[![Quality Score](https://img.shields.io/scrutinizer/g/Edwin-Luijten/ekko-broadcast-bundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/Edwin-Luijten/ekko-broadcast-bundle/?branch=master)
 [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/c2f65cee-102d-4066-ba1f-311e01d9f03f.svg?maxAge=2592000)](https://insight.sensiolabs.com/projects/c2f65cee-102d-4066-ba1f-311e01d9f03f)
-[![Total Downloads](https://img.shields.io/packagist/dt/edwin-luijten/ekko-bundle.svg?style=flat-square)](https://packagist.org/packages/edwin-luijten/ekko-bundle)
+[![Total Downloads](https://img.shields.io/packagist/dt/edwin-luijten/ekko-broadcast-bundle.svg?style=flat-square)](https://packagist.org/packages/edwin-luijten/ekko-broadcast-bundle)
 
 In many modern web applications, there is some kind of real-time user experience.
 When some data is updated on the server, a message is typically sent over a websocket connection or push notification to be handled by the client.  
@@ -18,12 +18,12 @@ This library aims to help you with that, with support for Pusher and Redis out o
 Via Composer
 
 ``` bash
-$ composer require edwin-luijten/ekko-bundle
+$ composer require edwin-luijten/ekko-broadcast-bundle
 ```
 
 ## Usage
 
-Please check the [wiki page](https://github.com/Edwin-Luijten/ekko-bundle/wiki) for a detailed implementation documentation.
+Please check the [wiki page](https://github.com/Edwin-Luijten/ekko-broadcast-bundle/wiki) for a detailed implementation documentation.
 
 ### Enable ###
 Enable the bundle by adding it to the list of registered bundles
@@ -41,7 +41,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
 
-            new EdwinLuijten\EkkoBundle\EkkoBundle(),
+            new EdwinLuijten\Ekko\BroadcastBundle\BroadcastBundle(),
         );
 
         // ...

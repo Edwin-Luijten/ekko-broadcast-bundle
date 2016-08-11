@@ -1,12 +1,12 @@
 <?php
 
-namespace EdwinLuijten\EkkoBundle;
+namespace EdwinLuijten\Ekko\BroadcastBundle;
 
-use EdwinLuijten\EkkoBundle\DependencyInjection\BroadcasterPass;
+use EdwinLuijten\Ekko\BroadcastBundle\DependencyInjection\BroadcasterPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class EkkoBundle extends Bundle
+class BroadcastBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace EdwinLuijten\EkkoBundle\DependencyInjection;
+namespace EdwinLuijten\Ekko\BroadcastBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

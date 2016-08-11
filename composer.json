@@ -1,5 +1,5 @@
 {
-    "name": "edwin-luijten/ekko-bundle",
+    "name": "edwin-luijten/ekko-broadcast-bundle",
     "type": "symfony-bundle",
     "description": "",
     "license": "MIT",
@@ -14,7 +14,7 @@
     "require": {
         "php": ">=5.6.0",
         "symfony/framework-bundle": "^2.7|^3.0",
-        "edwin-luijten/ekko": "^1.0",
+        "edwin-luijten/ekko-broadcast": "^1.0",
         "matthiasnoback/symfony-dependency-injection-test": "^1.0"
     },
     "require-dev": {
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "EdwinLuijten\\EkkoBundle\\": "src/"
+            "EdwinLuijten\\Ekko\\BroadcastBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "EdwinLuijten\\EkkoBundle\\Tests\\": "tests/src/"
+            "EdwinLuijten\\Ekko\\BroadcastBundle\\Tests\\": "tests/src/"
         }
     }
 }

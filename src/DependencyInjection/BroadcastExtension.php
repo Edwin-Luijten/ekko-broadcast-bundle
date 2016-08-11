@@ -1,13 +1,13 @@
 <?php
 
-namespace EdwinLuijten\EkkoBundle\DependencyInjection;
+namespace EdwinLuijten\Ekko\BroadcastBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 
-class EkkoExtension extends Extension
+class BroadcastExtension extends Extension
 {
     /**
      * {@inheritDoc}

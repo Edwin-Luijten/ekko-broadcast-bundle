@@ -1,8 +1,8 @@
 <?php
 
-namespace EdwinLuijten\EkkoBundle\Tests\DependencyInjection;
+namespace EdwinLuijten\Ekko\BroadcastBundle\Tests\DependencyInjection;
 
-use EdwinLuijten\EkkoBundle\DependencyInjection\BroadcasterPass;
+use EdwinLuijten\Ekko\BroadcastBundle\DependencyInjection\BroadcasterPass;
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractCompilerPassTestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;

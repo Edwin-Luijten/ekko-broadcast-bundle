@@ -1,16 +1,16 @@
 <?php
 
-namespace EdwinLuijten\EkkoBundle\Tests\DependencyInjection;
+namespace EdwinLuijten\Ekko\BroadcastBundle\Tests\DependencyInjection;
 
-use EdwinLuijten\EkkoBundle\DependencyInjection\EkkoExtension;
+use EdwinLuijten\Ekko\BroadcastBundle\DependencyInjection\BroadcastExtension;
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractExtensionTestCase;
 
-class EkkoExtensionTest extends AbstractExtensionTestCase
+class BroadcastExtensionTest extends AbstractExtensionTestCase
 {
     protected function getContainerExtensions()
     {
         return [
-            new EkkoExtension()
+            new BroadcastExtension()
         ];
     }
 
